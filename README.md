@@ -9,3 +9,7 @@ https://github.com/search?utf8=%E2%9C%93&q=RNA-seq
 2. https://github.com/nnalpas/microRNA-sequencing
 3. https://github.com/dmnfarrell/mirseqapp
 4. https://github.com/dmnfarrell/mirnaseq
+
+##miRNA sequencing all in one pipeline
+1. http://ibis.tau.ac.il/miRNAkey/
+2. http://bioinformaticstools.mayo.edu/research/cap-mirseq/
