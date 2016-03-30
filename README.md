@@ -13,3 +13,7 @@ https://github.com/search?utf8=%E2%9C%93&q=RNA-seq
 ##miRNA sequencing all in one pipeline
 1. http://ibis.tau.ac.il/miRNAkey/
 2. http://bioinformaticstools.mayo.edu/research/cap-mirseq/
+
+
+##fusion tools 
+1. http://aebruno.github.io/fusim/index.html FUSIM--a software tool for simulating fusion transcripts
