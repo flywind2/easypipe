@@ -17,3 +17,7 @@ https://github.com/search?utf8=%E2%9C%93&q=RNA-seq
 
 ##fusion tools 
 1. http://aebruno.github.io/fusim/index.html FUSIM--a software tool for simulating fusion transcripts
+
+
+##mutation tools
+1. https://mutalyzer.nl mutalyzer
