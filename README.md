@@ -21,3 +21,7 @@ https://github.com/search?utf8=%E2%9C%93&q=RNA-seq
 
 ##mutation tools
 1. https://mutalyzer.nl mutalyzer
+
+
+##genetic risk scores
+1. http://www.genabel.org/PredictABEL/riskScore.html--Function to compute genetic risk scores
