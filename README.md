@@ -2,7 +2,8 @@
 easy bioinformatics pipeline scripts and analysis script from web resource
 
 ##rnaseq resource in github
-https://github.com/search?utf8=%E2%9C%93&q=RNA-seq
+1. https://github.com/search?utf8=%E2%9C%93&q=RNA-seq
+2. http://bioinformatics.mdanderson.org/Software/PRADA/ --mdanderson RNASeq data analysis pipeline
 
 ##microRNA sequencing analysis script in github
 1. https://github.com/hangelwen/miR-PREFeR
