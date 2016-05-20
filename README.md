@@ -22,6 +22,7 @@ easy bioinformatics pipeline scripts and analysis script from web resource
 
 ##mutation tools
 1. https://mutalyzer.nl mutalyzer
+2. http://bcb.io bcbio
 
 
 ##genetic risk scores
