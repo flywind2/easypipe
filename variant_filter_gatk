@@ -1,0 +1,52 @@
+read -p "Please input the sample name: " sample_name
+
+#extract SNP
+java -jar /compute/biosoft/GenomeAnalysisTK-3.4/GenomeAnalysisTK-3.4.jar \
+-T SelectVariants \
+-V $sample_name.annotator.vcf \
+-o $sample_name.snp.vcf \
+-env \
+-R /data/common/genome/hg19/ucsc.hg19.fasta \
+-selectType SNP
+
+#extract INDEL
+java -jar /compute/biosoft/GenomeAnalysisTK-3.4/GenomeAnalysisTK-3.4.jar \
+-T SelectVariants \
+-V $sample_name.annotator.vcf \
+-o $sample_name.indel.vcf \
+-env \
+-R /data/common/genome/hg19/ucsc.hg19.fasta \
+-selectType INDEL
+
+#do hard filteration with VariantFiltration
+
+#filter SNP
+java -jar /compute/biosoft/GenomeAnalysisTK-3.4/GenomeAnalysisTK-3.4.jar \
+-T VariantFiltration  \
+-V $sample_name.snp.vcf \
+-o $sample_name.snp.final.vcf  \
+-R /data/common/genome/hg19/ucsc.hg19.fasta  \
+--clusterWindowSize 10 \
+--filterExpression "QD < 2.0 || FS > 60.0" \
+--filterName "HARD_SNP_LOWQUAL" \
+--filterExpression "MQ < 40.0 || SOR>4.0 || ReadPosRankSum < -8.0 || MQRankSum < -12.5" \
+--filterName "HARD_SNP"
+
+
+#filter INDEL
+java -jar /compute/biosoft/GenomeAnalysisTK-3.4/GenomeAnalysisTK-3.4.jar \
+-T VariantFiltration  \
+-V $sample_name.indel.vcf \
+-o $sample_name.indel.final.vcf  \
+-R /data/common/genome/hg19/ucsc.hg19.fasta  \
+--clusterWindowSize 10 \
+--filterExpression "QD < 2.0 || FS > 200.0" \
+--filterName "LOWQUAL_FS" \
+--filterExpression "SOR > 10 || ReadPosRankSum < -20.0" \
+--filterName "HARD_INDEL" \
+--filterExpression "HRun>2" \
+--filterName "Homopolymer_Filter" \
+--filterExpression "VariantType=~'(DELETION|INSERTION)\.NumRepetitions_[3-9].*'" --filterName "Repeat_Filter"
+
+#filter INDEL 20151223
+#filter lines with  NumRepetitions > 3 manually
