@@ -27,3 +27,6 @@ easy bioinformatics pipeline scripts and analysis script from web resource
 
 ##genetic risk scores
 1. http://www.genabel.org/PredictABEL/riskScore.html--Function to compute genetic risk scores
+
+##bioinformatics resources for debian
+1.https://blends.debian.org/med/tasks/bio-ngs
