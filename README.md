@@ -30,3 +30,7 @@ easy bioinformatics pipeline scripts and analysis script from web resource
 
 ##bioinformatics resources for debian
 1.https://blends.debian.org/med/tasks/bio-ngs
+
+
+##target sequencing
+1.https://www.nature.com/articles/s41598-017-09064-w
