@@ -32,8 +32,9 @@ easy bioinformatics pipeline scripts and analysis script from web resource
 1.https://blends.debian.org/med/tasks/bio-ngs
 
 
-##target sequencing
+##target sequencing and cnv
 1.https://www.nature.com/articles/s41598-017-09064-w
+2.http://plagnol-lab.blogspot.com/2013/11/faq-and-clarifications-for-exomedepth-r.html
 
 
 ## open new for biomedical
