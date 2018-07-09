@@ -34,3 +34,7 @@ easy bioinformatics pipeline scripts and analysis script from web resource
 
 ##target sequencing
 1.https://www.nature.com/articles/s41598-017-09064-w
+
+
+## open new for biomedical
+1.https://www.onclive.com
