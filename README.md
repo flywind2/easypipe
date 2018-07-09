@@ -41,3 +41,4 @@ easy bioinformatics pipeline scripts and analysis script from web resource
 1.https://www.onclive.com
 2.https://www.cancer.org/cancer/non-small-cell-lung-cancer/causes-risks-prevention.html
 3.https://www.biorxiv.org/content/biorxiv/early/2016/11/04/083428.1.full.pdf
+4.https://jmd.amjpathol.org
